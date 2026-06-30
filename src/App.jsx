@@ -70,7 +70,16 @@ export default function App() {
             {experience.map((job) => (
               <article key={job.company} className="job">
                 <div className="job-head">
-                  <h4>{job.company} <span className="job-role">— {job.role}</span></h4>
+                  <h4>
+                    {job.url ? (
+                      <a className="job-company" href={job.url} target="_blank" rel="noreferrer">
+                        {job.company} <Icon path={icons.arrow} />
+                      </a>
+                    ) : (
+                      job.company
+                    )}
+                    <span className="job-role"> — {job.role}</span>
+                  </h4>
                   <span className="period">{job.period}</span>
                 </div>
                 <p className="job-summary">{job.summary}</p>

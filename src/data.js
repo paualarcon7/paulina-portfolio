@@ -26,6 +26,7 @@ export const about = [
 export const experience = [
   {
     company: 'Finnix.ai',
+    url: 'https://www.finnix.ai/',
     role: 'Full Stack Developer',
     period: 'Apr 2023 — Present',
     summary:
@@ -39,6 +40,7 @@ export const experience = [
   },
   {
     company: 'Potentiia',
+    url: 'https://potentiia.com/',
     role: 'Full Stack Developer',
     period: 'Mar 2025 — Present',
     summary:
